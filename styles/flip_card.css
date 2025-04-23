@@ -1,0 +1,70 @@
+
+body {
+    background-color: antiquewhite;
+    font-family: "Winky Rough", sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #362424;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #e3c6af;
+}
+
+td.matched {
+    background-color: rgb(255, 174, 0);
+    cursor: default;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: #b37b4d;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+}
+
+button {
+    font-family: "Winky Rough", sans-serif;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ffcc99;
+    border-radius: 6px;
+    box-shadow: 0 4px #b37b4d;
+    transition: all 0.1s ease-in-out;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #b37b4d;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    /* background-color: red; */
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
