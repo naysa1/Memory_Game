@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flip Card Game</title>
+    <link rel="stylesheet" href="styles/flip_card.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Flip Card Game!</h1>
+    <p class="subtitle">Please enter even numbers! Have fun :D</p>
+    <div class="game-container">
+        <form id="form">
+            <label htmlFor="rows">Enter a number of rows: </label>
+            <input id="rows" name="rows" type="number" min="1" required>
+            <p></p>
+            <label htmlFor="columns">Enter a number of columns: </label>
+            <input id="columns" name="columns" type="number" min="1" required>
+            <p></p>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset Game</button>
+            </div>
+        </form>
+        <div id="grid"></div>
+        <div id="score-container">
+            Score: <span id="score">0</span>
+            Attempts: <span id="attempts">0</span>
+        </div>
+    </div>
+    <script src="scripts/flip_card.js"></script>
+  </body>
+</html>
